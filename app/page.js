@@ -30,7 +30,7 @@ const postMetaData = await getPost()
 
 const postPreview = postMetaData?.map((post, index)=>(
   <div key={index}>
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/posts/${post.title}`}>
     <h2 >{post.title}</h2>
     <p >{post.subtitle}</p>
     <p >{post.date}</p>
